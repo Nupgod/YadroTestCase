@@ -13,18 +13,28 @@ The program includes test examples to verify the correctness of event processing
 ## Installation Guide
 ### 1. Downloading the Project
 You can download the project by cloning the repository from GitHub:
-``` git clone git@github.com:Nupgod/YadroTestCase.git ```
+``` 
+git clone git@github.com:Nupgod/YadroTestCase.git
+```
 ### 2. Move to repository
-``` cd YadroTestCase ```
+```
+cd YadroTestCase
+```
 ### 3. Build App
 #### Build by Makefile
-```make build```
+```
+make build
+```
 #### Build by GO
-```go build -o logger .\cmd\main.go```
+```
+go build -o logger .\cmd\main.go
+```
 #### Build by Docker
 ```	
 docker build -t yadro-logger .
 docker run yadro-logger
 ```
 ### 4. Run app
-```logger <filepath>```
+```
+logger <filepath>
+```

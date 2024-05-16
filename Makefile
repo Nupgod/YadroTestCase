@@ -9,3 +9,6 @@ rebuild: build run
 docker:
 	docker build -t yadro-logger .
 	docker run yadro-logger
+
+test:
+	go test ./tests

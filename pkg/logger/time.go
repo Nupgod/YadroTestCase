@@ -24,7 +24,7 @@ func (c *Club)calculateRevenue(event Event, tableInd int) {
 	c.Tables[tableInd].Income += hoursWorked * c.HourlyRate
 }
 
-func fmtDuration(d time.Duration) string {
+func FmtDuration(d time.Duration) string {
     d = d.Round(time.Minute)
     h := d / time.Hour
     d -= h * time.Hour

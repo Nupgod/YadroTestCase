@@ -130,6 +130,6 @@ func (c *Club) PrintResults() {
 	}
 	fmt.Println(c.EndTime.Format(layout))
 	for i, table := range c.Tables {
-		fmt.Printf("%d %d %s\n", i+1, table.Income, fmtDuration(c.Tables[i].Duration))
+		fmt.Printf("%d %d %s\n", i+1, table.Income, FmtDuration(c.Tables[i].Duration))
 	}
 }

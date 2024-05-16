@@ -1,8 +1,8 @@
 build:
-	go build .\cmd\main.go
+	go build -o logger .\cmd\main.go
 
 run:
-	.\main.exe .\test_file.txt
+	.\logger .\test_file.txt
 
 rebuild: build run
 
